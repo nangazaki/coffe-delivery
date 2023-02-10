@@ -1,12 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { ContainerStyled } from '../../style/GlobalStyle.style'
-import { HeaderStyled, Location, Cart } from "./style"
+import { useTheme } from 'styled-components'
+import { MapPin, ShoppingCart } from 'phosphor-react'
 import Logo from "../../assets/Logo.svg"
-import IconLocation from "../../assets/IconLocation.svg"
-import IconCart from "../../assets/IconCart.svg"
+import { ContainerStyled } from '../../style/global'
+import { HeaderStyled, IconHeader } from "./style"
 
 export default function Header() {
+
+  const theme = useTheme()
+
   return (
     <>
       <ContainerStyled>
@@ -18,13 +21,12 @@ export default function Header() {
           </div>
 
           <div>
-            <Location> 
-              <img src={IconLocation} alt="Icone localização" /> 
-              Porto Alegre, RS
-            </Location>
-            <Cart>
-              <img src={IconCart} alt="Icone carrinho" />
-            </Cart>
+            <IconHeader fontSize={theme.fontSizes['text-s']} bgColor={theme.colors['purple-light']} color={theme.colors['purple-dark']}> 
+              <MapPin weight='fill' color={theme.colors['purple-dark']} size={22} /> Luanda, LD
+            </IconHeader>
+            <IconHeader fontSize={theme.fontSizes['text-s']} bgColor={theme.colors['purple-light']} color={theme.colors['purple-dark']}>
+              <ShoppingCart weight='fill' color={theme.colors['yellow-dark']} size={22} />
+            </IconHeader>
           </div>
         </HeaderStyled>
       </ContainerStyled>

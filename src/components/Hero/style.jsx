@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from "../../assets/Background.png"
+import img from "../../assets/Background.svg"
 
 export const Background = styled.section`
   width: 100%;
@@ -24,14 +24,13 @@ export const HeroSection = styled.div`
   align-items: center;
 
   @media (max-width: 1080px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 40px;
   }
 
   img {
     max-width: 476px;
     width: 100%;
-    height: 360px;
   }
 `;
 
@@ -41,6 +40,8 @@ export const TextGroup = styled.div`
 `;
 
 export const Text = styled.p`
-  font-size: 20px;
+  font-size: ${({ theme }) => theme.fontSizes['text-l']};
+  color: ${({ theme }) => theme.colors['base-text']};
   margin-top: 16px;
+  margin-bottom: 4rem;
 `;

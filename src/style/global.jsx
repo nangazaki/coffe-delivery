@@ -34,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
 body {
   font-family: 'Roboto';
   width: 100%;
-  background-color: ${({ theme }) => theme.colorsBase.background};
+  background-color: ${({ theme }) => theme.colors['base-background']};
 }
 
 a {
@@ -42,7 +42,6 @@ a {
 }
 
 img {
-  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -51,23 +50,23 @@ h1,
 h2,
 h3,
 h4 {
-    color: ${({ theme }) => theme.colorsBase.title};
-    font-family: 'Baloo 2';
+    color: ${({ theme }) => theme.colors['base-title']};
+    font-family: ${({ theme }) => theme.fonts['title']};
     font-stretch: condensed;
     line-height: 130%;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: ${({ theme }) => theme.fontSizes['title-xl']};
 }
 h2 {
-  font-size: 2rem;
+  font-size: ${({ theme }) => theme.fontSizes['title-l']};
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: ${({ theme }) => theme.fontSizes['title-m']};
 }
 h4 {
-  font-size: 1.125rem;
+  font-size: ${({ theme }) => theme.fontSizes['title-s']};
 }
 `;
 
