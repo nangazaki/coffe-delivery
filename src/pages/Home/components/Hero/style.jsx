@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import img from "../../assets/Background.svg"
+import img from "../../../../assets/Background.svg"
 
 export const Background = styled.section`
   width: 100%;
-  height: 544px;
-  background-image: url(${img});
-  background-position: center;
+  height: 34rem;
+  background: url(${img}) no-repeat center;
   background-size: cover;
   display: flex;
   align-items: center;

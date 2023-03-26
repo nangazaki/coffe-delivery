@@ -1,14 +1,12 @@
 import React from 'react'
-import Coffee from '../../components/Coffee'
-import Header from '../../components/Header'
-import Hero from '../../components/Hero'
+import Hero from './components/Hero'
+import OurCoffes from './components/OurCoffes'
 
 export default function Home() {
   return (
     <>
-      <Header />
       <Hero />
-      <Coffee />
+      <OurCoffes />
     </>
   )
 }

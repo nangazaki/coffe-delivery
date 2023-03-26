@@ -27,7 +27,7 @@ export const theme = {
     'text-m': '1rem',
     'text-s': '0.875rem',
     'text-sm': '0.75rem',
-    'components-tag': '0.625rem',
+    'components-tag': '0.75rem',
     'components-button-g': '0.875rem',
     'components-button-s': '0.75rem',
   },

@@ -14,36 +14,38 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 ::-webkit-scrollbar-track {
-
+  background-color: ${({ theme }) => theme.colors["yellow-light"]};
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
+  background-color: ${({ theme }) => theme.colors["yellow-dark"]};
 }
 
 ::-moz-selection {
-  background-color: #2895E2;
+  background-color: ${({ theme }) => theme.colors["yellow-dark"]};
   color: #F8F8F8;
 }
 
 ::selection {
-  background-color: #2895E2;
+  background-color: ${({ theme }) => theme.colors["yellow-dark"]};
   color: #F8F8F8;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webikit-appearance: none;
+  margin: 0;
+}
+
+input[type="button"] {
+  -moz-appearance: textfield;
 }
 
 body {
   font-family: 'Roboto';
   width: 100%;
   background-color: ${({ theme }) => theme.colors['base-background']};
-}
-
-a {
- 
-}
-
-img {
-  width: 100%;
-  height: 100%;
 }
 
 h1,
@@ -70,9 +72,3 @@ h4 {
 }
 `;
 
-export const ContainerStyled = styled.div`
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 24px;
-`;

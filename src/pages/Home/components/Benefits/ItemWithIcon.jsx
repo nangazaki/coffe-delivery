@@ -1,13 +1,13 @@
 import React from 'react'
 import { IconContainer, Item } from './style'
 
-export default function ItemWithIcon({icon, iconBg, text}) {
+export default function ItemWithIcon({ icon, iconBg, text }) {
   return (
     <Item>
       <IconContainer iconBg={iconBg} >
-        {icon} 
+        {icon}
       </IconContainer>
-      {text}
+      <p>{text}</p>
     </Item>
   )
 }

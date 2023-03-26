@@ -2,22 +2,31 @@ import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
   width: 100%;
-  height: 104px;
+  height: 6.5rem;
+  background: ${({ theme }) => theme.colors["base-background"]};
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  div{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
 
-    &:last-child {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-right{
       display: flex;
       justify-content: space-between;
       gap: 8px;
     }
-  }
 `;
 
-export const IconHeader = styled.span`
+export const Icon = styled.div`
   padding: 8px 10px;
   display: flex;
   justify-content: center;
@@ -27,4 +36,4 @@ export const IconHeader = styled.span`
   font-size: ${(props) => props.fontSize};
   background-color: ${(props) => props.bgColor};
   color: ${(props) => props.color};
-`;
+`

@@ -32,3 +32,7 @@ export const ItemsContainer = styled.div`
   display: flex;
   gap: 40px;
 `;
+
+export const Icon = styled.div`
+
+`

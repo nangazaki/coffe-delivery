@@ -6,4 +6,4 @@
 
 * Vite
 * Styled Components
-* Outros tópicos por acrescentar
+* Others topics to add
