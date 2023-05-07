@@ -1,10 +1,14 @@
-import React from 'react'
+import { CompleteForm } from './components/CompleteForm'
+import { SelectedCoffes } from './components/SelectedCoffes'
 import { CompleteOrderContainer } from './style'
 
 export default function CompleteOrderPage() {
   return (
     <CompleteOrderContainer className='container'>
-      <div>Checkout</div>
+      <CompleteForm />
+      <SelectedCoffes />
     </CompleteOrderContainer>
   )
 }
+
+

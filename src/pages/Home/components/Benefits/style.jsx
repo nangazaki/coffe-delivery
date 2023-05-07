@@ -14,7 +14,6 @@ export const Item = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
-  width: 240px;
 `;
 
 export const IconContainer = styled.span`

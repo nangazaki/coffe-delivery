@@ -8,4 +8,5 @@ export const LayoutContainer = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
+  
 `
