@@ -6,9 +6,11 @@ import { HeaderStyled, Icon } from "./style"
 import { MapPin, ShoppingCart } from 'phosphor-react'
 
 import Logo from "../../assets/Logo.svg"
+import { useCart } from '../../hooks/useCart'
 
 export default function Header() {
   const theme = useTheme()
+  const { cartQuantity } = useCart()
 
   return (
     <>
@@ -26,6 +28,7 @@ export default function Header() {
             </Icon>
             <Link to='/complete-order'>
               <Icon fontSize={theme.fontSizes['text-s']} bgColor={theme.colors['yellow-light']} color={theme.colors['yellow-dark']}>
+                {cartQuantity >= 1 && <span>{cartQuantity}</span>}
                 <ShoppingCart weight='fill' color={theme.colors['yellow-dark']} size={22} />
               </Icon>
             </Link>

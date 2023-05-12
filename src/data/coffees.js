@@ -1,4 +1,4 @@
-export const coffes = [
+export const coffees = [
   {
     id: 1,
     tags: ['tradicional'],

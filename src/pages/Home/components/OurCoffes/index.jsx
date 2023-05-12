@@ -1,16 +1,16 @@
 import React from 'react'
 import CoffeCard from '../CoffeCard'
 import { CoffeGrid, OurCoffesContainer } from './style'
-import { coffes } from "../../../../data/coffes"
+import { coffees } from "../../../../data/coffees"
 
 export default function OurCoffes() {
   return (
     <OurCoffesContainer className='container'>
       <h2>Nossos cafés</h2>
       <CoffeGrid>
-        {coffes.map((coffe) => {
+        {coffees.map((coffee) => {
           return <>
-            <CoffeCard key={coffe.id} coffe={coffe} />
+            <CoffeCard key={coffee.id} coffee={coffee} />
           </>
         })}
       </CoffeGrid>
