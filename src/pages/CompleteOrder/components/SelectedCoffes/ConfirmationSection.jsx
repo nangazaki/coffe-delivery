@@ -24,7 +24,7 @@ export function ConfirmationSection() {
         <p className="bold-l">{cartTotal} AOA</p>
       </div>
 
-      <Button text="Confirmar Pedido" disabled={cartQuantity <= 0} />
+      <Button type="submit" text="Confirmar Pedido" disabled={cartQuantity <= 0} />
     </ConfirmationSectionContainer>
   )
 }
